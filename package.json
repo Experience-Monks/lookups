@@ -1,5 +1,5 @@
 {
-  "name": "fast-lookup",
+  "name": "lookups",
   "version": "1.0.0",
   "description": "A datastructure which allows you to use any Javascript value as a key. Keys can be Objects, Functions, Numbers, Strings.",
   "main": "index.js",
@@ -10,7 +10,9 @@
     "url": "https://github.com/mikkoh"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "^3.0.3"
+  },
   "scripts": {
     "test": "node test.js"
   },
@@ -19,10 +21,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mikkoh/fast-lookup.git"
+    "url": "git://github.com/jam3/lookups.git"
   },
-  "homepage": "https://github.com/mikkoh/fast-lookup",
+  "homepage": "https://github.com/jam3/lookups",
   "bugs": {
-    "url": "https://github.com/mikkoh/fast-lookup/issues"
+    "url": "https://github.com/jam3/lookups/issues"
   }
 }
