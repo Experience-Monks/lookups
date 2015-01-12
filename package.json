@@ -1,0 +1,28 @@
+{
+  "name": "fast-lookup",
+  "version": "1.0.0",
+  "description": "A datastructure which allows you to use any Javascript value as a key. Keys can be Objects, Functions, Numbers, Strings.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Mikko Haapoja",
+    "email": "me@mikkoh.com",
+    "url": "https://github.com/mikkoh"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "object,function,number,string,key"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikkoh/fast-lookup.git"
+  },
+  "homepage": "https://github.com/mikkoh/fast-lookup",
+  "bugs": {
+    "url": "https://github.com/mikkoh/fast-lookup/issues"
+  }
+}
