@@ -45,14 +45,17 @@ lookup.prototype = {
 
   remove: function( key ) {
 
-    var keyType = typeof key;
+    var keyType = typeof key,
+        rVal    = undefined;
 
     if( keyType === "string" ) {
 
+      rVal = this._dataStr[ key ];
       delete this._dataStr[ key ];
     }
     else if( keyType === "number" ) {
 
+      rVal = this._dataNum[ key ];
       delete this._dataNum[ key ];
     }
     else {
@@ -61,9 +64,12 @@ lookup.prototype = {
 
       if( i != -1 ) {
 
+        rVal = this._dataOther[ i + 1 ];
         this._dataOther.splice( i, 2 );
       }
     }
+    
+    return rVal;
   },
 
   get: function( key ) {
