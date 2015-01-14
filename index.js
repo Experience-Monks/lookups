@@ -2,6 +2,13 @@ module.exports = lookup;
 
 function lookup() {
 
+  if( !( this instanceof lookup ) ) {
+
+    var newObj = Object.create(lookup.prototype);
+    lookup.apply(newObj, arguments);
+    return newObj;
+  }
+
   if( arguments.length % 2 != 0 ) {
 
     throw new Error( 'Incorrect key value amount. You should pass in arguments as key, value, key, value, ...' );
