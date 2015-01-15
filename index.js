@@ -45,9 +45,9 @@ lookup.prototype = {
 
       this._dataOther[ i ]     = key;
       this._dataOther[ i + 1 ] = value;
-
-      return value;
     }
+    
+    return value;
   },
 
   remove: function( key ) {
