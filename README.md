@@ -18,7 +18,7 @@ var keyString = 'something';
 var keyNumber = 123;
 var keyFunction2 = function() {};
 
-var hash = lookups( 
+var collection = new lookups( 
   
   keyObject, true,
   keyFunction, 123,
@@ -26,9 +26,9 @@ var hash = lookups(
   keyNumber, 'hell world'
 );
 
-hash.set( keyFunction2, 'something new' ); // will return 'something new'
-hash.get( keyObject ); // will return the object { 'something': 'someValue' }
-hash.remove( keyString ); // will delete and return 'something'
+collection.set( keyFunction2, 'something new' ); // will return 'something new'
+collection.get( keyObject ); // will return the object { 'something': 'someValue' }
+collection.remove( keyString ); // will delete and return 'something'
 ```
 
 ## License
